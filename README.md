@@ -1,6 +1,6 @@
 # Mixed Radix
 
-![npm](https://img.shields.io/npm/v/mixed-radix.svg) ![Travis](https://img.shields.io/travis/thevtm/mixed-radix.svg)
+![npm](https://img.shields.io/npm/v/mixed-radix.svg) ![Travis](https://img.shields.io/travis/thevtm/mixed-radix.svg) [![Coverage Status](https://coveralls.io/repos/github/thevtm/mixed-radix/badge.svg)](https://coveralls.io/github/thevtm/mixed-radix)
 
 A small library that encode and decode using [mixed radix].
 
