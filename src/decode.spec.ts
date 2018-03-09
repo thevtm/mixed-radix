@@ -5,8 +5,8 @@ describe("decode", () => {
 
   it("expect mrDecode nominal behaviour", () => {
 
-    expect(mrDecode([10], 0)).toEqual([0]);
-    expect(mrDecode([10], 3)).toEqual([3]);
+    expect(mrDecode([10],  0)).toEqual([0]);
+    expect(mrDecode([10],  3)).toEqual([3]);
     expect(mrDecode([10], 10)).toEqual([0]);
 
     expect(mrDecode([2, 3], 0)).toEqual([0, 0]);
@@ -17,14 +17,18 @@ describe("decode", () => {
     expect(mrDecode([2, 3], 6)).toEqual([0, 0]);
     expect(mrDecode([2, 3], 9)).toEqual([1, 0]);
 
-    expect(mrDecode([4, 6], 3)).toEqual([0, 3]);
+    expect(mrDecode([4, 6],  3)).toEqual([0, 3]);
     expect(mrDecode([4, 6], 14)).toEqual([2, 2]);
 
-    expect(mrDecode([3, 3, 2], 0)).toEqual([0, 0, 0]);
-    expect(mrDecode([3, 3, 2], 5)).toEqual([0, 2, 1]);
-    expect(mrDecode([3, 3, 2], 7)).toEqual([1, 0, 1]);
+    expect(mrDecode([3, 3, 2],  0)).toEqual([0, 0, 0]);
+    expect(mrDecode([3, 3, 2],  5)).toEqual([0, 2, 1]);
+    expect(mrDecode([3, 3, 2],  7)).toEqual([1, 0, 1]);
     expect(mrDecode([3, 3, 2], 11)).toEqual([1, 2, 1]);
     expect(mrDecode([3, 3, 2], 17)).toEqual([2, 2, 1]);
+
+    expect(mrDecode([24, 60, 60],  3661)).toEqual([ 1,  1,  1]);
+    expect(mrDecode([24, 60, 60], 26473)).toEqual([ 7, 21, 13]);
+    expect(mrDecode([24, 60, 60], 72726)).toEqual([20, 12,  6]);
 
   });
 

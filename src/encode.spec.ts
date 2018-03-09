@@ -4,8 +4,8 @@ describe("decode", () => {
 
   it("expect mrEncode nominal behaviour", () => {
 
-    expect(mrEncode([10], [0])).toEqual(0);
-    expect(mrEncode([10], [3])).toEqual(3);
+    expect(mrEncode([10], [ 0])).toEqual(0);
+    expect(mrEncode([10], [ 3])).toEqual(3);
     expect(mrEncode([10], [10])).toEqual(10);
 
     expect(mrEncode([2, 3], [0, 0])).toEqual(0);
@@ -22,6 +22,10 @@ describe("decode", () => {
     expect(mrEncode([3, 3, 2], [1, 0, 1])).toEqual(7);
     expect(mrEncode([3, 3, 2], [1, 2, 1])).toEqual(11);
     expect(mrEncode([3, 3, 2], [2, 2, 1])).toEqual(17);
+
+    expect(mrEncode([24, 60, 60], [1,   1,  1])).toEqual(3661);
+    expect(mrEncode([24, 60, 60], [7,  21, 13])).toEqual(26473);
+    expect(mrEncode([24, 60, 60], [20, 12,  6])).toEqual(72726);
 
   });
 
