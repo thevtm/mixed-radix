@@ -1,5 +1,7 @@
 # Mixed Radix
 
+![npm](https://img.shields.io/npm/v/mixed-radix.svg) ![Travis](https://img.shields.io/travis/thevtm/mixed-radix.svg)
+
 A small library that encode and decode using [mixed radix].
 
 ```javascript
